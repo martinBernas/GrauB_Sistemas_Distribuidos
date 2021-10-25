@@ -1,0 +1,8 @@
+#Dimensionamento 500 500 #
+#Campo_texto 100 100 Descricao "Primeiro Produto" 94021 14
+#Campo_texto 200 150 Lote "123456789" ArialBlack 12
+#Campo_texto 220 100 Detalhe "Primeiro produto demonstracao" Arial 12
+#Campo_texto 220 100 CNPJ_destino "12.345.678/9012-34" Arial 12
+#Campo_texto 220 100 Produzido "06/06/2021" Arial 12
+#Campo_texto 220 100 Validade "30/06/2021" Arial 12
+#Imprimir 5 #

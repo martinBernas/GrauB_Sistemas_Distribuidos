@@ -1,0 +1,12 @@
+C:\ArquivosProjetoGB\XML
+C:\ArquivosProjetoGB\Layouts
+C:\ArquivosProjetoGB\Saida
+COM4
+9600
+192.168.0.19
+192.168.000.15
+32000
+9100
+C:\ArquivosProjetoGB\Logs
+IP
+k7YLnW/4jhxuSUwEZYGsZJz2BR9Q/Z8x

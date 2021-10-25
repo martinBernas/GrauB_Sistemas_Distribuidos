@@ -1,0 +1,6 @@
+C:\YARA\XML
+C:\YARA\Layouts
+C:\YARA\Saida
+COM4
+9600
+OEA7d0+nu78IIViZfdOwA/bMujpNZ8wZ

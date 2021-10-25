@@ -1,0 +1,85 @@
+!V3218
+!/ version 4
+!V5000 <CLEAR>
+!/ label "Modelo9" "" "" "" "" 37 S 1500 1200 30 00
+!C
+!y23 0
+!y24 1000
+!y25 1800
+!Y9 1
+!Y35 99
+!V131 99
+!V128
+!Y106 5
+!Y105 5
+!Y104 1
+!Y103 1
+!Y102 3
+!Y101 1
+!F S S 1659 807 L 10 10 94023 0 "EP MG-91076-7"
+!F S S 1661 434 L 6 6 94021 0 "COD."
+!F S S 1656 325 L 10 10 94023 0 "1000005976"
+!F S S 1628 807 L 6 6 94021 0 "YARA BRASIL FERTILIZANTES S/A"
+!F S S 1568 807 L 6 6 94021 0 "CNPJ"
+!F S S 1568 727 L 6 6 94021 0 "92.660.604/0098-05"
+!F S S 1598 807 L 6 6 94021 0 "Av.Antonio Carlos Guillaumon 665 Uberaba MG 38044-760"
+!F S S 1545 434 L 6 6 94021 0 "REG. PROD. MIN DA AGRIC."
+!F S S 1496 980 L 6 6 94021 0 "%%N 
+SOL.AGUA"
+!F S S 1433 960 L 10 10 94023 0 "15,5"
+!F S S 1496 832 L 6 6 94021 0 "%%P2O5 S
+OL.AGUA"
+!F S S 1433 772 L 10 10 94023 0 "0"
+!F S S 1526 648 L 6 6 94021 0 "%%K2O SOL.AGUA"
+!F S S 1433 638 L 10 10 94023 0 "0"
+!F S S 1067 986 L 6 6 94021 0 "MODO DE APLICACAO"
+!F S S 1067 731 L 6 6 94021 0 "VIA FOLIAR, FERTIRRIG, HIDROP"
+!F S S 1476 383 L 6 6 94021 0 "NATUREZA FISICA"
+!F S S 1450 410 L 6 6 94021 0 "SAL SOL. DISPENSADA IN 46"
+!F S S 1515 384 L 6 6 94021 0 "RS-05207 10933-9"
+!F S S 928 767 L 6 6 94021 0 "RECOMENDACOES DE USO PARA APLICACAO FOLIAR"
+!F S S 1027 767 L 6 6 94021 0 "RECOMENDACOES DE USO PARA FERTIRRIGACAO:"
+!F S S 1093 871 L 6 6 94021 0 "YARALIVA"
+!F S S 954 985 L 6 6 94021 0 "kg/ha;Tomate:600kg/ha. HIDROPONIA: Hortalica e Rucula 600g/1000L."
+!F S S 980 985 L 6 6 94021 0 ",complentdo o volume do tanque. Cafe Conilon:500kg/ha; Cafe Arabica:350"
+!F S S 1006 985 L 6 6 94021 0 "Adicionar agua limpa ate 3/4 vol.tanque,diluindo o produto com agitacao"
+!F S S 1092 596 L 6 6 94021 0 "FERTILIZANTE MINERAL SIMPLES"
+!F S S 1237 987 L 6 6 94021 0 "pH(Maior relacao soluto/solvente para aplicacao)(g/L): 6"
+!F S S 1264 986 L 6 6 94021 0 "Indice salino: 86"
+!F S S 1209 988 L 6 6 94021 0 "Condutividade eletrica na maior rel. sol./solv. aplic. (mS/cm): 130"
+!F S S 1296 987 L 6 6 94021 0 "Maior relacao soluto/solvente para aplicacao (g/L): 840"
+!F S S 1322 987 L 6 6 94021 0 "Solubilidade em agua a 20 C (g/l): 1200"
+!F S S 1401 985 L 6 6 94021 0 "%% Ca Sol. H2O: 19,00"
+!F S S 1150 991 L 6 6 94021 0 "FERTILIZANTE NITRATO DE CALCIO YARALIVA CALCINIT 15,5%%N 19%%CA"
+!F S S 1123 988 L 6 6 94021 0 "SOL. H2O"
+!F S S 895 935 L 6 6 94021 0 "Cultura"
+!F S S 895 727 L 6 6 94021 0 "Dose(kg/ha)"
+!F S S 895 540 L 6 6 94021 0 "Calda - L/ha"
+!F S S 850 964 L 6 6 94021 0 "Cafe"
+!F S S 851 740 L 6 6 94021 0 "2 a 4kg/ha"
+!F S S 845 536 L 6 6 94021 0 "400 a 600"
+!F S S 792 964 L 6 6 94021 0 "Citros"
+!F S S 794 744 L 6 6 94021 0 " 20 kg/ha"
+!F S S 796 536 L 6 6 94021 0 " 2000 L"
+!F S S 1180 984 L 6 6 94021 0 "INDUSTRIA BRASILEIRA"
+!F S S 614 969 L 6 6 94021 0 "Perigo"
+!F S S 587 969 L 6 6 94021 0 "Nocivo se ingerido. Pode ser nocivo em contato com a pele. Provoca lesoes"
+!F S S 560 969 L 6 6 94021 0 "oculares graves."
+!F S S 450 969 L 6 6 94021 0 "Use luvas de protecao e protecao ocular. Nao coma, beba ou fume durante a"
+!F S S 422 969 L 6 6 94021 0 "utilizacao deste produto. Lave cuidadosamente apos o manuseio. EM CASO DE"
+!F S S 395 969 L 6 6 94021 0 "CONTATO COM OS OLHOS: Enxague cuidadosamente com agua durante varios"
+!F S S 368 969 L 6 6 94021 0 "minutos. No caso de uso de lentes de contato, remova-as, se for facil."
+!F S S 340 969 L 6 6 94021 0 "Continue enxaguando. Contate imediatamente um CENTRO DE INFORMACAO"
+!F S S 313 969 L 6 6 94021 0 "TOXICOLOGICA ou um medico. EM CASO DE INGESTAO: Caso sinta indisposicao,"
+!F S S 286 969 L 6 6 94021 0 "contate um CENTRO DE INFORMACAO TOXICOLOGICA/medico. Enxague a boca."
+!F G N 763 968 R 1 1 "g01l_gkg2_7pt_S"
+!F G N 763 863 R 1 1 "g01n_gkq7_7pt_S"
+!F S S 68 934 L 7 7 94021 0 "LOTE"
+!F S S 68 781 L 7 7 94021 0 "QTD: TONELADA"
+!F S S 68 545 L 7 7 94021 0 "FABRICADO EM"
+!F S S 68 270 L 7 7 94021 0 "VALIDADE"
+!F S S 24 974 L 7 7 94021 0 "0000775963"
+!F S S 28 784 L 7 7 94021 0 "31,00"
+!F S S 18 534 L 7 7 94021 0 "23/02/2018"
+!F S S 24 252 L 7 7 94021 0 "23/02/2020"
+!p5

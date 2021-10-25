@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dados>
+	<LoteInterno>123456789</LoteInterno>
+	<Codigo_Material>MT1234567</Codigo_Material>
+	<Modelo>Modelo_demo</Modelo>
+	<Descricao>Primeiro Produto</Descricao>
+	<Lote>123456789</Lote>
+	<Detalhe>Primeiro produto demonstracao</Detalhe>
+	<CNPJ_destino>12.345.678/9012-34</CNPJ_destino>
+	<Produzido>06/06/2021</Produzido>
+	<Validade>30/06/2021</Validade>
+	<QuantidadeEtiquetas>20</QuantidadeEtiquetas>
+</Dados>
