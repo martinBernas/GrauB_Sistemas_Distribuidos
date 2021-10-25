@@ -1,11 +1,36 @@
-#Dimensionamento 500 500 #
+#Dimensionamento 500 500 $
 
-#Campo_texto 200 150 Lote "123456" ArialBlack 12 #
-#Campo_texto 220 100 Codigo_Material "xexexe" Arial 12 #
-#Campo_texto 230 100 Descrição "xexexe" Arial 12 #
-#Campo_texto 220 100 Detalhe "xexexe" Arial 12 #
-#Campo_texto 220 100 CNPJ_destino "xexexe" Arial 12 #
-#Campo_texto 220 100 Produzido "xexexe" Arial 12 #
-#Campo_texto 220 100 Validade "xexexe" Arial 12 #
+#Campo_texto|200 150 Lote "123456" ArialBlack 12 $
+#Campo_texto|220 100 Codigo_Material "xexexe" Arial 12 $
+#Campo_texto|230 100 Descrição "xexexe" Arial 12 $
+#Campo_texto|220 100 Detalhe "xexexe" Arial 12 $
+#Campo_texto|220 100 CNPJ_destino "xexexe" Arial 12 $
+#Campo_texto|220 100 Produzido "xexexe" Arial 12 $
+#Campo_texto|220 100 Validade "xexexe" Arial 12 $
 
-#Imprimir 20 #
+#Imprimir|20 $
+
+
+#Status$
+#Trigger$
+
+
+
+
+
+-------------------------------------
+#Dimensionamento 500 500 
+
+#Campo_texto|200 150 Lote "123456" ArialBlack 12
+#Campo_texto|220 100 Codigo_Material "xexexe" Arial 12 
+#Campo_texto| 230 100 Descrição "xexexe" Arial 12 
+#Campo_texto| 220 100 Detalhe "xexexe" Arial 12 
+#Campo_texto| 220 100 CNPJ_destino "xexexe" Arial 12 
+#Campo_texto| 220 100 Produzido "xexexe" Arial 12 
+#Campo_texto| 220 100 Validade "xexexe" Arial 12 
+
+#Imprimir 20 
+
+
+#Status
+#Trigger
