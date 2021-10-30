@@ -14,7 +14,14 @@
 #define MAXBUFSIZE 1000
 
 int main()
-{
+{	
+
+	int index=0;
+    int i_command=0;
+    int i_dado=0;
+    char command[15];
+    char dado[100];
+	
    int listenfd, connfd, n;
    struct sockaddr_in servaddr,cliaddr;
    socklen_t clilen;
@@ -54,20 +61,55 @@ int main()
          while(n > 0)				// Quando n for zero não haverá mais dados a serem lidos e deve-se encerrar a conexão.
         {
 			// Recebe dados do socket
-			recv_buffer[0] = '\0';
+			recv_buffer[0] = '#';
             n = recvfrom(connfd, recv_buffer, MAXBUFSIZE, 0,(struct sockaddr *)&cliaddr,&clilen);
-            recv_buffer[n] = '\0';
- 
-			if (recv_buffer[0] != '\0'){
-				printf("\tReceived data: %s From: %s, port %d\n", recv_buffer, inet_ntoa(cliaddr.sin_addr), htons(cliaddr.sin_port)); // Mostra porta do cliente
+            //recv_buffer[n] = '\0';
+			
+			
+			
+			    while(index < strlen(recv_buffer)){
 
-				printf("\tSending response...\n");
+					if(recv_buffer[index] == '#'){
+						while(recv_buffer[index] != '|'){
+							command[i_command] = recv_buffer[index];
+							i_command++;
+							index++;
+						}
+						command[i_command]=0;
+						while(recv_buffer[index] != '$'){
+							index++;
+							dado[i_dado] = recv_buffer[index];
+							i_dado++;
+						}
+						dado[i_dado]=0;
+						i_command=0;
+						i_dado=0;
+						index++;
+					}
+						if (strcmp(command,"#Campo_texto")==0){
+							printf("Campo_texto: ");
+							printf("%s \n",dado);
+							strcpy(send_buffer, "Comando de texto \n");
+							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						}
 
-				// Envia resposta
-				strcpy(send_buffer, "Hello, i am the server!");
-				sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-	    }
+						if (strcmp(command,"#Imprimir")==0){
+							printf("Imprimir: ");
+							printf("imprimindo...");
+							strcpy(send_buffer, "Comando de imprimir\n");
+							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						}
+
+						if (strcmp(command,"#Status")==0){
+							printf("Status: ok ");
+							strcpy(send_buffer, "Comando de status\n");
+							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						}
+				}
+		
+		
+		
 		}
       }
    }
-} 
+}         
