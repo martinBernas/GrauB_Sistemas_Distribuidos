@@ -34,7 +34,7 @@ int main()
    printf("\t##### TCP client #####\n");
       
    // Escreve dados no buffer
-   strcpy(sendline, "#Campo_texto|dado1$#Campo_texto|dado2$#Campo_texto|dado3$#Campo_texto|dado4$#Campo_texto|dado5$#Campo_texto|dado6$#Campo_texto|dado7$#Imprimir|$#Status|$");
+   strcpy(sendline, "#Campo_texto|dado1$#Status|$");
 
    // Inicia conexao com o servidor
    connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));

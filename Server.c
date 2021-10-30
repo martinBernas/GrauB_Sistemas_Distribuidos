@@ -26,8 +26,8 @@ int main()
    struct sockaddr_in servaddr,cliaddr;
    socklen_t clilen;
    pid_t     childpid;
-   char recv_buffer[MAXBUFSIZE];
-   char send_buffer[MAXBUFSIZE];
+   //char recv_buffer[MAXBUFSIZE];
+   //char send_buffer[MAXBUFSIZE];
 
    listenfd=socket(AF_INET,SOCK_STREAM,0);
 
@@ -57,11 +57,14 @@ int main()
 									// então esse if separa os códigos que devem ser executados pelo filho e pelo pai
 									// fork() retorna um valor negativo em caso de erro.
       {
+         char recv_buffer[MAXBUFSIZE];
+         char send_buffer[MAXBUFSIZE];
          n = 1;
+         printf("Criado processo\n");
          while(n > 0)				// Quando n for zero não haverá mais dados a serem lidos e deve-se encerrar a conexão.
         {
 			// Recebe dados do socket
-			recv_buffer[0] = '#';
+			recv_buffer[0] = 0;
             n = recvfrom(connfd, recv_buffer, MAXBUFSIZE, 0,(struct sockaddr *)&cliaddr,&clilen);
             //recv_buffer[n] = '\0';
 			
@@ -91,20 +94,21 @@ int main()
 							printf("%s \n",dado);
 							strcpy(send_buffer, "Comando de texto \n");
 							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						}
-
-						if (strcmp(command,"#Imprimir")==0){
+						}else if (strcmp(command,"#Imprimir")==0){
 							printf("Imprimir: ");
 							printf("imprimindo...");
 							strcpy(send_buffer, "Comando de imprimir\n");
 							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						}
-
-						if (strcmp(command,"#Status")==0){
-							printf("Status: ok ");
+						}else if(strcmp(command,"#Status")==0){
+							printf("Status: ok \n");
 							strcpy(send_buffer, "Comando de status\n");
 							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						}
+						}else{
+                     printf("Comando desconhecido\n");
+                     strcpy(send_buffer, "Comando desconhecido\n");
+                     sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+                     recv_buffer[index]=0;
+                  }
 				}
 		
 		
