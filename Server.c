@@ -1,5 +1,6 @@
 // Servidor TCP
 
+#define _OPEN_SYS_ITOA_EXT
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,6 +11,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <pthread.h>
 
 #define MAXBUFSIZE 1000
 
@@ -21,6 +23,11 @@ int main()
     int i_dado=0;
     char command[15];
     char dado[100];
+	int imprimir;
+	char simprimir[3];
+	char status[20];
+	
+	pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
 	
    int listenfd, connfd, n;
    struct sockaddr_in servaddr,cliaddr;
@@ -89,30 +96,41 @@ int main()
 						i_dado=0;
 						index++;
 					}
-						if (strcmp(command,"#Campo_texto")==0){
-							printf("Campo_texto: ");
-							printf("%s \n",dado);
-							strcpy(send_buffer, "Comando de texto \n");
-							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						}else if (strcmp(command,"#Imprimir")==0){
-							printf("Imprimir: ");
-							printf("imprimindo...");
-							strcpy(send_buffer, "Comando de imprimir\n");
-							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						}else if(strcmp(command,"#Status")==0){
-							printf("Status: ok \n");
-							strcpy(send_buffer, "Comando de status\n");
-							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						}else{
-                     printf("Comando desconhecido\n");
-                     strcpy(send_buffer, "Comando desconhecido\n");
-                     sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-                     recv_buffer[index]=0;
-                  }
-				}
-		
-		
-		
+					
+					pthread_mutex_lock(&mutex1);
+					if (strcmp(command,"#Campo_texto")==0){
+						printf("Campo_texto: ");
+						printf("%s \n",dado);
+						stpcpy(status,command);
+						strcpy(send_buffer, "Comando de texto \n");
+						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+					}else if (strcmp(command,"#Imprimir")==0){
+						printf("Imprimir: ");
+						imprimir=atoi(dado);
+						printf("imprimindo...");
+						strcpy(send_buffer, "Comando de imprimir\n");
+						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+					}else if(strcmp(command,"#Status")==0){
+						printf("Status: ok \n");
+						sprintf(simprimir,"%d",imprimir);
+						strcpy(send_buffer, status);
+						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						strcpy(send_buffer, simprimir);
+						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+					}else if(strcmp(command,"#Trigger")==0){
+						imprimir=imprimir-1;
+						strcpy(send_buffer, "Trigger enviado");
+						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						
+					}else{
+						printf("Comando desconhecido\n");
+						strcpy(send_buffer, "Comando desconhecido\n");
+						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						recv_buffer[index]=0;
+					}
+					pthread_mutex_unlock(&mutex1);
+					
+				}				
 		}
       }
    }
