@@ -3,9 +3,9 @@ C:\ArquivosProjetoGB\Layouts
 C:\ArquivosProjetoGB\Saida
 COM4
 9600
-192.168.0.19
+192.168.0.22
 192.168.000.15
-32000
+23
 9100
 C:\ArquivosProjetoGB\Logs
 IP

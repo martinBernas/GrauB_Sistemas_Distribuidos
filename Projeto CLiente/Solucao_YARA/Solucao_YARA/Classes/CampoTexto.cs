@@ -93,7 +93,7 @@ namespace Solucao_YARA.Classes
         #region Metodos
         public override string EnviaCampo()
         {
-            return ("#Campo_texto " + Position + " " + Baseline + " " + Nome + " " + Conteudo + " " + Fonte + " " + Altura + "\r");
+            return ("#Campo_texto|" + Position + " " + Baseline + " " + Nome + " " + Conteudo + " " + Fonte + " " + Altura + "$");
         }
         public string EnviaVariavel()
         {

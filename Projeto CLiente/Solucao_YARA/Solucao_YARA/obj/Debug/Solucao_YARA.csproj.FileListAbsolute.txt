@@ -27,13 +27,13 @@ C:\Users\User\Documents\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao
 C:\Users\User\Documents\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.exe
 C:\Users\User\Documents\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.pdb
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\bin\Debug\Solucao_YARA.exe.config
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\bin\Debug\Solucao_YARA.exe
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\bin\Debug\Solucao_YARA.pdb
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.AssemblyReference.cache
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.Form1.resources
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.Properties.Resources.resources
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.GenerateResource.cache
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.CoreCompileInputs.cache
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.exe
-C:\Users\Martín Bernasconi\OneDrive - Associacao Antonio Vieira\Documentos\GitHub\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.pdb
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\bin\Debug\Solucao_YARA.exe.config
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\bin\Debug\Solucao_YARA.exe
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\bin\Debug\Solucao_YARA.pdb
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.AssemblyReference.cache
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.Form1.resources
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.Properties.Resources.resources
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.GenerateResource.cache
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.csproj.CoreCompileInputs.cache
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.exe
+C:\Users\Martín Bernasconi\source\repos\martinBernas\Projeto-GB-Redes-Industriais\Solucao_YARA\Solucao_YARA\obj\Debug\Solucao_YARA.pdb

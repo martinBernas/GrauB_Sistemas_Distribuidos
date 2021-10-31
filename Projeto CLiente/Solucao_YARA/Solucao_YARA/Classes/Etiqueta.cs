@@ -80,7 +80,7 @@ namespace Solucao_YARA.Classes
             set {
                 quantidade = value;
                 rodape = new List<string>();
-                rodape.Add("#Imprimir " + Quantidade + " #\r");
+                rodape.Add("#Imprimir|" + Quantidade + "$");
             }
         }
         public List<Campo> Conteudo { get => conteudo; set => conteudo = value; }

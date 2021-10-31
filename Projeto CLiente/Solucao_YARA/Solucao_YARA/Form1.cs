@@ -231,7 +231,7 @@ namespace Solucao_YARA
                         foreach (string atual in saida)
                         {
                             
-                            byte[] ba = Encoding.Default.GetBytes(atual + "\n");
+                            byte[] ba = Encoding.Default.GetBytes(atual);
                             //byte[] aux = new byte[atual.Length + 1];
                             //int j = 0;
                             //for (int i = 0; i < ba.Length; i++)
