@@ -18,12 +18,12 @@
 int main()
 {	
 
-	int index=0;
-    int i_command=0;
-    int i_dado=0;
-    char command[15];
-    char dado[100];
+	
+    
 	int imprimir;
+	char memoria_maquina [100][100];
+	int posicao_memoria_livre = 0;
+
 	char simprimir[3];
 	char status[20];
 	
@@ -65,7 +65,13 @@ int main()
 									// fork() retorna um valor negativo em caso de erro.
       {
          char recv_buffer[MAXBUFSIZE];
+         char dado[100];
          char send_buffer[MAXBUFSIZE];
+         int index=0;
+    		int i_command=0;
+    		int i_dado=0;
+    		char command[15];
+
          n = 1;
          printf("Criado processo\n");
          while(n > 0)				// Quando n for zero não haverá mais dados a serem lidos e deve-se encerrar a conexão.
@@ -75,7 +81,7 @@ int main()
             n = recvfrom(connfd, recv_buffer, MAXBUFSIZE, 0,(struct sockaddr *)&cliaddr,&clilen);
             //recv_buffer[n] = '\0';
 			
-			
+				printf("Comando Recebido %s",recv_buffer);
 			
 			    while(index < strlen(recv_buffer)){
 
@@ -101,7 +107,8 @@ int main()
 					if (strcmp(command,"#Campo_texto")==0){
 						printf("Campo_texto: ");
 						printf("%s \n",dado);
-						stpcpy(status,command);
+						strcpy(memoria_maquina[posicao_memoria_livre],dado);
+						posicao_memoria_livre ++;
 						strcpy(send_buffer, "Comando de texto \n");
 						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
 					}else if (strcmp(command,"#Imprimir")==0){
@@ -112,15 +119,31 @@ int main()
 						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
 					}else if(strcmp(command,"#Status")==0){
 						printf("Status: ok \n");
+						int i=0;
+						char linha_status[100];
+						for(i=0;i<posicao_memoria_livre;i++){
+							strcpy(linha_status, memoria_maquina[i]);
+							strcat(linha_status,"\n");
+							strcat(send_buffer,linha_status);
+						}
+						strcat(send_buffer,"\n");
 						sprintf(simprimir,"%d",imprimir);
-						strcpy(send_buffer, status);
+						strcat(send_buffer,"Impressoes restante:");
+						strcat(send_buffer,simprimir);
+					
 						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-						strcpy(send_buffer, simprimir);
-						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+
 					}else if(strcmp(command,"#Trigger")==0){
-						imprimir=imprimir-1;
-						strcpy(send_buffer, "Trigger enviado");
-						sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						if (imprimir>0)
+						{
+							imprimir=imprimir-1;
+							strcpy(send_buffer, "Trigger enviado");
+							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						}else{
+							strcpy(send_buffer, "Sem Impressoes");
+							sendto(connfd, send_buffer, strlen(send_buffer), 0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
+						}
+						
 						
 					}else{
 						printf("Comando desconhecido\n");
