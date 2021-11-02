@@ -1,0 +1,16 @@
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\bin\Debug\netcoreapp3.1\Supervisor impressora.exe
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\bin\Debug\netcoreapp3.1\Supervisor impressora.deps.json
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\bin\Debug\netcoreapp3.1\Supervisor impressora.runtimeconfig.json
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\bin\Debug\netcoreapp3.1\Supervisor impressora.runtimeconfig.dev.json
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\bin\Debug\netcoreapp3.1\Supervisor impressora.dll
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\bin\Debug\netcoreapp3.1\Supervisor impressora.pdb
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.csproj.AssemblyReference.cache
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor_impressora.Form1.resources
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.csproj.GenerateResource.cache
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.AssemblyInfoInputs.cache
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.AssemblyInfo.cs
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.csproj.CoreCompileInputs.cache
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.dll
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.pdb
+C:\Users\Martín Bernasconi\source\repos\Supervisor impressora\Supervisor impressora\obj\Debug\netcoreapp3.1\Supervisor impressora.genruntimeconfig.cache
