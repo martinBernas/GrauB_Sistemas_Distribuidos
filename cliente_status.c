@@ -40,10 +40,6 @@ int main()
    // Inicia conexao com o servidor
    connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
 
-   // Envia dados
-   sendto(sockfd,sendline,strlen(sendline),0, (struct sockaddr *)&servaddr,sizeof(servaddr));
-
-
    printf("\tWaiting for response...\n");
 
    // Recebe resposta
