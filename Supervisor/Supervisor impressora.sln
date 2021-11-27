@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supervisor impressora", "Supervisor impressora\Supervisor impressora.csproj", "{A41DB051-EA45-4576-AEC0-A00F974E114A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A41DB051-EA45-4576-AEC0-A00F974E114A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41DB051-EA45-4576-AEC0-A00F974E114A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41DB051-EA45-4576-AEC0-A00F974E114A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41DB051-EA45-4576-AEC0-A00F974E114A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {064F05AC-E37D-42C5-AF28-B9159AEC8381}
+	EndGlobalSection
+EndGlobal
